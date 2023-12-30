@@ -197,4 +197,16 @@ img {
   font-size: 2rem;
   text-align: center;
   margin: 2rem 0;
+}
+
+.footer-page {
+  margin: 0 auto;
+  padding: 4rem 0;
+  background-color: rgb(47, 48, 58);
+}
+
+.footer-text {
+  font-size: 2rem;
+  color: whitesmoke;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
