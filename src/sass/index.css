@@ -132,14 +132,63 @@ img {
     border-radius: 2px;
     background-color: green;
   }
-  .header-nav__link.current-link::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    border-radius: 2px;
-    background-color: green;
+}
+
+.search-form {
+  position: relative;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .search-form {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .search-form {
+    margin-right: 0;
+  }
+}
+
+.search-input {
+  width: 100%;
+  outline: transparent;
+  -webkit-appearance: none;
+  height: 50px;
+  padding-left: 0.5rem;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 5px;
+  background-color: white;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .search-input {
+    height: 40px;
+  }
+}
+.search-input:hover, .search-input:focus {
+  border-color: rgb(35, 36, 35);
+}
+
+.search-btn {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 12px;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .search-btn {
+    width: 40px;
+    height: 40px;
   }
 }/*# sourceMappingURL=index.css.map */
