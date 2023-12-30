@@ -191,4 +191,10 @@ img {
     width: 40px;
     height: 40px;
   }
+}
+
+.main-text {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
 }/*# sourceMappingURL=index.css.map */
