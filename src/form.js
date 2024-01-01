@@ -1,10 +1,13 @@
 'use strict';
+import { refs } from './js/reference/refs';
+import { formTemplates } from './js/forms/formsTemplates';
+
 export function getFormId() {
   const params = new URLSearchParams(window.location.search);
 
   const formId = params.get('form');
+  // console.log('formId', formId);
   return formId;
-  //console.log('formId', id);
 }
 
 export function oneFormControl() {
@@ -13,5 +16,9 @@ export function oneFormControl() {
 }
 oneFormControl();
 export function renderOneForm(formId) {
-  console.log('in oneFormRender');
+  // const markup = formTemplates[formId];
+  // refs.formWrp.innerHTML = markup;
+  refs.formWrp.innerHTML = formTemplates[formId]
+    ? formTemplates[formId]
+    : `<p style="text-align:center">Sorry.We do not have this form</p>`;
 }

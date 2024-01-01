@@ -8,7 +8,7 @@ addlistener();
 
 export function onformsListClick(e) {
   e.preventDefault();
-  //console.log(e.target.classList.contains('forms-link'));
+  //console.log(e.target.dataset.formid);
   if (e.target.classList.contains('forms-link')) {
     console.log('hier');
     window.location.href = `./form.html?form=${e.target.dataset.formid}`;

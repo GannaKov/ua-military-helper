@@ -1,0 +1,28 @@
+// .wbsGoBack-link {
+// }
+.wbsGoBack-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  border: 2px solid green;
+  border-radius: 3px;
+  color: green;
+  background-color: white;
+  outline: transparent;
+  width: 168px;
+  height: 40px;
+
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  @include transitions(color, background-color);
+  &:is(:hover, :focus) {
+    background-color: green;
+    color: white;
+  }
+}
+.wbsGoBack-icon {
+  fill: currentColor;
+  margin-right: 0.5rem;
+}
