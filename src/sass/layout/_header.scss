@@ -38,9 +38,7 @@
 }
 .header-nav__link {
   color: black;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
+  @include transitions(color);
   @include tablet {
     padding-top: 1rem;
     padding-bottom: 1rem;

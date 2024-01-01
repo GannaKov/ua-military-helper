@@ -1,0 +1,17 @@
+.forms-list {
+}
+.forms-item {
+}
+.forms-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.forms-link {
+  color: rgb(7, 7, 206);
+  font-size: 1.3rem;
+
+  @include transitions(color, text-decoration);
+}
+.forms-link:is(:hover, :focus) {
+  color: rgb(141, 101, 179);
+  text-decoration: underline;
+}

@@ -108,7 +108,7 @@ img {
   color: black;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .header-nav__link {
@@ -212,4 +212,23 @@ img {
   font-size: 2rem;
   color: whitesmoke;
   text-align: center;
+}
+
+.forms-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.forms-link {
+  color: rgb(7, 7, 206);
+  font-size: 1.3rem;
+  transition-property: color, -webkit-text-decoration;
+  transition-property: color, text-decoration;
+  transition-property: color, text-decoration, -webkit-text-decoration;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.forms-link:is(:hover, :focus) {
+  color: rgb(141, 101, 179);
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
