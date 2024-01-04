@@ -34,14 +34,6 @@ export function renderOneForm(formId) {
 }
 
 export function onCreatePDFClick(e) {
-  if (e.target.classList.contains('check')) {
-    const oneForm = document.getElementById('form');
-    checkInputValue(oneForm);
-    renderPreview();
-    refs.formBtn.classList.replace('check', 'toPDF');
-    refs.formBtn.textContent = 'to PDF';
-  }
-
   if (e.target.classList.contains('toPDF')) {
     const pdfTemplate = document.getElementById('pdfTempl');
     const formId = getFormId();
@@ -53,7 +45,15 @@ export function onCreatePDFClick(e) {
       // jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
     };
     html2pdf().set(opt).from(pdfTemplate).save();
+  } else if (e.target.classList.contains('check')) {
+    console.log('in check');
+    const oneForm = document.getElementById('form');
+    checkInputValue(oneForm);
+    renderPreview();
+    refs.formBtn.classList.replace('check', 'toPDF');
+    refs.formBtn.textContent = 'to PDF';
   }
+
   // const { jsPDF } = window.jspdf;
 
   // doc.text('Hello world!', 10, 10);
