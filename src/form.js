@@ -40,11 +40,12 @@ export function onCreatePDFClick(e) {
     const opt = {
       // margin: 1,
       filename: formId,
+      format: 'a4',
       // image: { type: 'jpeg', quality: 0.98 },
       // html2canvas: { scale: 2 },
       // jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
     };
-    html2pdf().set(opt).from(pdfTemplate).save();
+    html2pdf().set(opt).from(pdfTemplate).toPdf().save();
   } else if (e.target.classList.contains('check')) {
     console.log('in check');
     const oneForm = document.getElementById('form');
