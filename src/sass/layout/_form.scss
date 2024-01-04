@@ -11,12 +11,42 @@
 }
 .form-input {
   margin-bottom: 1rem;
-  width: 100%;
+  // width: 100%;
   height: 35px;
   @include desktop {
     width: 300px;
   }
 }
 .form-text {
+  margin-bottom: 1rem;
+}
+.btn-form__wrp {
+  display: flex;
+  justify-content: center;
+}
+.form-btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+// --- preview ----
+// .preview-wrapper {
+// }
+.preview {
+  margin: 0 auto;
+  border: 1px solid gray;
+  padding: 5rem 3rem 4rem;
+  width: 100%;
+  @include desktop {
+    width: 800px;
+  }
+}
+.preview-title {
+  margin-bottom: 1rem;
+}
+.preview-text {
   margin-bottom: 1rem;
 }
