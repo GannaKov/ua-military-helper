@@ -1,0 +1,2 @@
+function r(r){r.preventDefault(),r.target.classList.contains("forms-link")&&(console.log("hier"),window.location.href=`./form.html?form=${r.target.dataset.formid}`)}({formsList:document.querySelector(".forms-list"),formWrp:document.querySelector(".form-wrapper"),btnFormWrp:document.querySelector(".btn-form__wrp"),formBtn:document.querySelector(".form-btn")}).formsList.addEventListener("click",r);
+//# sourceMappingURL=forms.2d01402d.js.map
