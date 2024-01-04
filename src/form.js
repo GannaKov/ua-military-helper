@@ -52,7 +52,9 @@ export function onCreatePDFClick(e) {
     checkInputValue(oneForm);
     renderPreview();
     refs.formBtn.classList.replace('check', 'toPDF');
+    refs.formBtn.setAttribute('download', 'file.pdf');
     refs.formBtn.textContent = 'to PDF';
+    //download="file.pdf"
   }
 
   // const { jsPDF } = window.jspdf;
